@@ -1,0 +1,9 @@
+{
+  "name": "yaap-wire",
+  "version": "0.1.4",
+  "main": "./wireplugin.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/warmuuh/yaap-wire.git"
+  }
+}
