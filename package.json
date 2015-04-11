@@ -1,0 +1,38 @@
+{
+  "name": "yaap-wire",
+  "version": "0.1.4",
+  "description": "yaap-wire plugin",
+  "keywords": [
+    "javascript",
+    "dependency injection",
+    "AOP",
+    "IOC", 
+    "Yaap", 
+    "wire"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warmuuh/yaap-wire.git"
+  },
+  "bugs": {
+    "url": "https://github.com/warmuuh/yaap-wire/issues"
+  },
+  "scripts": {
+    "test": "node testsuite.js"
+  },
+  "contributors": [
+    "Peter Mucha <ptmucha@gmail.com>"
+  ],
+  "dependencies": {
+    "PanPG": "0.0.9",
+    "underscore": "1.4.4",
+    "yaap": "0.1.4",
+    "wire": "0.10.0"
+  },
+  "devDependencies": {
+    "nodeunit": "0.9.1"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "main": "./wireplugin.js"
+}
