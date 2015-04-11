@@ -10,15 +10,15 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 (function(define) {
-        define(["underscore", "../yaap", 
-        "./plugins/AutowireProcessor", 
-        "./plugins/PostConstructProcessor", 
-        "./plugins/PreDestroyProcessor", 
+        define(["underscore", "yaap",
+        "./plugins/AutowireProcessor",
+        "./plugins/PostConstructProcessor",
+        "./plugins/PreDestroyProcessor",
         "wire", "when"], function(_, yaap, autowire, postConstruct, preDestroy, wire, when) {
                 "use strict";
 
 
-                function processAnnotations(resolver, facet, wire) {                		
+                function processAnnotations(resolver, facet, wire) {
                         var options = facet.options;
                         var obj = facet.target;
 
@@ -30,12 +30,12 @@
 	                        yaap.process(obj, ctx);
 
 	                        when.all(ctx.promises).then(resolver.resolve,resolver.reject);
-						
+
 						}, function(err){
 							console.log("wiring yaap-config failed:" + err);
 							resolver.reject();
 						} );
-                        
+
                 }
 
 				function afterProcessing(resolver, facet, wire) {
@@ -56,15 +56,15 @@
                                 yaap.register(autowire); //register annotation processor for @Autowire
 								yaap.register(postConstruct); //register annotation processor for @Initialize
 								yaap.register(preDestroy); //register annotation processor for @PreDestroy
-								
-							 
+
+
                                 return {
                                         "connect": 	processAnnotations,
                                         "ready": 	afterProcessing,
                                         "destroy": beforeDestroying
                                 };
                         };
-                
+
 
         });
 }(
