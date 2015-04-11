@@ -1,4 +1,4 @@
-#Yaap-Wire plugin
+#Yaap-Wire plugin [![Build Status](https://travis-ci.org/warmuuh/yaap-wire.svg?branch=master)](https://travis-ci.org/warmuuh/yaap)
 This project contains annotations that only work as a [wire.js](https://github.com/cujojs/wire)-plugin.
 
 
