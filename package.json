@@ -6,8 +6,8 @@
     "javascript",
     "dependency injection",
     "AOP",
-    "IOC", 
-    "Yaap", 
+    "IOC",
+    "Yaap",
     "wire"
   ],
   "repository": {
@@ -26,8 +26,9 @@
   "dependencies": {
     "PanPG": "0.0.9",
     "underscore": "1.4.4",
-    "yaap": "0.1.4",
-    "wire": "0.10.0"
+    "when": "^3.7.2",
+    "wire": "0.10.10",
+    "yaap": "0.1.4"
   },
   "devDependencies": {
     "nodeunit": "0.9.1"
